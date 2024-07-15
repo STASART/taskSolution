@@ -1,4 +1,6 @@
-//MARK: - First task
+/*
+MARK: - 1) Напишите переменные и константы всех базовых типов данных: int, UInt, float, double, string. У чисел вывести их минимальные и максимальные значения.
+ */
 let int: Int = 1
 let minInt: Int = Int.min
 var maxInt: Int = Int.max
@@ -20,7 +22,9 @@ let name: String = "Name"
 
 let isBool: Bool = true
 
-//MARK: - Task 2
+/*
+MARK: - 2) Создайте список товаров с различными характеристиками (количество, название). Используйте typealias.
+*/
 typealias Product = (count: Int, name: String)
 
 typealias ProductList = [Product]
@@ -32,7 +36,33 @@ for _ in 0...20 {
     productList.append(product)
 }
 
-//MARK: Calculate
+/*
+ MARK: - 3) Напишите различные выражения с приведением типа.
+ */
+let numInt: Int = 10
+let numDouble: Double = Double(a)
+print(numDouble)
+
+let anyValue: Any = "Hello, Swift"
+
+if let stringValue = anyValue as? String {
+    print(stringValue)
+} else {
+    print("anyValue is not a String")
+}
+
+let intValue: Int = 100
+let stringValue: String = String(intValue)
+print(stringValue)
+
+let doubleValue: Double = 45.67
+let intValueFromDouble: Int = Int(doubleValue)
+print(intValueFromDouble)
+
+/*
+MARK: - 4) Вычисления с операторами (умножение, деление, сложение, вычитание): создайте консольный калькулятор.
+ */
+
 func calculateTo(operation: Character, firstNumber: Int, secondNumber: Int) -> Int? {
     switch operation {
     case "*" : return firstNumber * secondNumber
@@ -42,6 +72,7 @@ func calculateTo(operation: Character, firstNumber: Int, secondNumber: Int) -> I
     default: return nil
     }
 }
+
 let operations: Set<Character> = ["*", "/", "+", "-"]
 
 func calculateStart() {
