@@ -74,7 +74,7 @@ func getFeedback(_ score: Int) -> String {
     case 9, 10:
         return "Отлично"
     default:
-        return "Оценка не корректна"
+        return "Оценка некорректна"
     }
 }
 
