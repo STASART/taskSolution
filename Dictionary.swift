@@ -4,36 +4,66 @@
 
 // 1. Словарь с месяцами на русском
 let monthsInRussian: [Int: String] = [
-    1: "Январь", 2: "Февраль", 3: "Март", 4: "Апрель",
-    5: "Май", 6: "Июнь", 7: "Июль", 8: "Август",
-    9: "Сентябрь", 10: "Октябрь", 11: "Ноябрь", 12: "Декабрь"
+    1: "Январь",
+    2: "Февраль",
+    3: "Март",
+    4: "Апрель",
+    5: "Май",
+    6: "Июнь",
+    7: "Июль",
+    8: "Август",
+    9: "Сентябрь",
+    10: "Октябрь",
+    11: "Ноябрь",
+    12: "Декабрь"
 ]
 
 // 2. Словарь с месяцами на английском
 let monthsInEnglish: [Int: String] = [
-    1: "January", 2: "February", 3: "March", 4: "April",
-    5: "May", 6: "June", 7: "July", 8: "August",
-    9: "September", 10: "October", 11: "November", 12: "December"
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December"
 ]
 
 // 3. Словарь с числовыми ключами и строковыми значениями
 let numberToString: [Int: String] = [
-    1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"
+    1: "One",
+    2: "Two",
+    3: "Three",
+    4: "Four",
+    5: "Five"
 ]
 
 // 4. Словарь с строковыми ключами и числовыми значениями
 let stringToNumber: [String: Int] = [
-    "One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5
+    "One": 1,
+    "Two": 2,
+    "Three": 3,
+    "Four": 4,
+    "Five": 5
 ]
 
 // 5. Словарь с ключами типа String и значениями типа Double
 let itemPrices: [String: Double] = [
-    "Milk": 1.99, "Bread": 2.49, "Eggs": 3.99
+    "Milk": 1.99,
+    "Bread": 2.49,
+    "Eggs": 3.99
 ]
 
 // 6. Словарь с ключами типа String и значениями типа Bool
 let userAccess: [String: Bool] = [
-    "Admin": true, "Editor": true, "Viewer": false
+    "Admin": true,
+    "Editor": true,
+    "Viewer": false
 ]
 
 // 7. Словарь с ключами типа Int и значениями типа [String]
@@ -100,8 +130,9 @@ if testDictinonary.isEmpty {
     testDictinonary[0] = "Zero"
     testDictinonary[1] = "One"
 }
-
-//MARK: - 4) Cоздайте словарь — ключ: «иномарка», «значение»: название машины. Добавьте в него значение по ключу - «отечественная». Распечатайте ключи и значения вконсоль. Затем отдельно только значения. Удалите из словаря иномарку по ключу (двумя способами: через nil и removeValue().
+/*
+MARK: - 4) Cоздайте словарь — ключ: «иномарка», «значение»: название машины. Добавьте в него значение по ключу - «отечественная». Распечатайте ключи и значения вконсоль. Затем отдельно только значения. Удалите из словаря иномарку по ключу (двумя способами: через nil и removeValue().
+ */
 var cars: [String: String] = ["иномарка": "Mercedes"]
 cars["отечественная"] = "Lada"
 
