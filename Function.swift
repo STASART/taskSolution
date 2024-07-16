@@ -13,6 +13,7 @@ func sortAndPrintArray(_ array: [Int]) {
 }
 
 let intArray = [5, 3, 8, 1, 2]
+
 sortAndPrintArray(intArray)
 
 func modifyAndSortArray(_ array: [String]) {
@@ -29,6 +30,7 @@ func modifyAndSortArray(_ array: [String]) {
 
 
 let stringArray = ["яблоко", "груша", "банан", "апельсин"]
+
 modifyAndSortArray(stringArray)
 
 func combineAndPrintArrays(_ array1: [String], _ array2: [String]) {
@@ -38,6 +40,7 @@ func combineAndPrintArrays(_ array1: [String], _ array2: [String]) {
 
 let stringArray1 = ["кот", "собака", "птица"]
 let stringArray2 = ["рыба", "лошадь", "корова"]
+
 combineAndPrintArrays(stringArray1, stringArray2)
 
 /*
@@ -51,7 +54,6 @@ struct Student {
 }
 
 var jornal = [Student]()
-
 let studentNames = ["Александр", "Максим", "Иван", "Дмитрий", "Андрей","Анна", "Мария", "Екатерина", "Александра", "Ольга"]
 let professions = ["Программист", "Инженер", "Учитель", "Врач", "Юрист", "Дизайнер", "Маркетолог", "Бухгалтер", "Архитектор", "Журналист"]
 

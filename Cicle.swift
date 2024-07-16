@@ -22,6 +22,7 @@ func printDayInMonth() {
 */
 
 let agesIfElse = [3, 10, 19, 25, 70, -1]
+
 for age in agesIfElse {
     print("If else Возраст \(age): \(determineActivityByAgeIfElse(age: age))")
     print("Switch Возраст \(age): \(determineActivityByAgeSwitch(age: age))")
@@ -98,6 +99,7 @@ func getFeedbackScoreIfElse(_ score: Int) -> String {
 }
 
 let scores = [2, 5, 7, 10, 12, 15]
+
 for score in scores {
     print("Switch Оценка \(score): \(getFeedbackScoreSwitch(score))")
     print("If Else Оценка \(score): \(getFeedbackScoreIfElse(score))")

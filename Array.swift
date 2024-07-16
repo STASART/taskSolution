@@ -56,9 +56,9 @@ printKids()
 
 var scores = [1, 2, 3, 4, 5]
 var scores2 = [6, 7, 8, 9, 10]
-
 let allScores = scores + scores2
 var allScores2 = scores
+
 allScores2.append(contentsOf: scores2)
 
 /*
@@ -95,7 +95,6 @@ for element in students {
 6) Создайте массив из чисел. Числа - это купюры в долларах. Посчитать количество денег и вывести в консоль
 */
 var monye = [2, 3, 5, 7, 12, 123, 411 ,12]
-
 var totalMonye = 0
 
 for i in monye {
