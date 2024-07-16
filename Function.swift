@@ -1,5 +1,5 @@
 /*
-MARK: - 1) Создать 3 функции:
+1) - Создать 3 функции:
 1)первая функция принимает массив Int и сортирует его по порядку (возрастание). После этого распечатывает результат в консоль;
 2)вторая функция принимает массив String, меняет 1, 2 и 3 элементы и сортирует по
 алфавиту. После этого распечатывает результат в консоль;
@@ -41,7 +41,7 @@ let stringArray2 = ["рыба", "лошадь", "корова"]
 combineAndPrintArrays(stringArray1, stringArray2)
 
 /*
-MARK: - 2) Создать журнал для учителя, который будет принимать имя студента, профессию и оценку изаписывает это все в массив. И внесите 10 студентов туда и распечатаете через цикл for.
+2) Создать журнал для учителя, который будет принимать имя студента, профессию и оценку изаписывает это все в массив. И внесите 10 студентов туда и распечатаете через цикл for.
  */
 
 struct Student {
@@ -83,21 +83,24 @@ func calculateCircleArea(radius: Double) -> Double {
 
 let radius = 5.0
 let area = calculateCircleArea(radius: radius)
+
 /*
-MARK: - 5) Создайте Dictionary с именем ученики , где ключ name и score, а значение (1 тюпл из 5 имен) и (второй тюпл из 5 оценок).И распечатайте только имена по ключу.
+5) Создайте Dictionary с именем ученики , где ключ name и score, а значение (1 тюпл из 5 имен) и (второй тюпл из 5 оценок).И распечатайте только имена по ключу.
 */
 
-let students: [String: Any] = [
+typealias FiveValue = (String, String, String, String, String)
+
+let students: [String: FiveValue] = [
     "names": ("Иван", "Мария", "Петр", "Анна", "Дмитрий"),
-    "scores": (85, 92, 78, 90, 88)
+    "scores": ("85", "92", "78", "90", "88")
 ]
 
-func printStudent(students: [String: Any]) {
-    if let studentNames = students["names"] as? (String, String, String, String, String) {
+func printStudents(students: [String: FiveValue]) = [ {
+    if let studentNames = students["names"]{
         print("Имена учеников: \(studentNames.0), \(studentNames.1), \(studentNames.2), \(studentNames.3), \(studentNames.4)")
     } else {
         print("Данные об учениках не найдены")
     }
 }
 
-printStudent(students: students)
+printStudents(students: students)

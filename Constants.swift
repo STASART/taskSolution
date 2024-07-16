@@ -1,5 +1,5 @@
 /*
-MARK: - 1) Напишите переменные и константы всех базовых типов данных: int, UInt, float, double, string. У чисел вывести их минимальные и максимальные значения.
+1) Напишите переменные и константы всех базовых типов данных: int, UInt, float, double, string. У чисел вывести их минимальные и максимальные значения.
  */
 let int: Int = 1
 let minInt: Int = Int.min
@@ -23,7 +23,7 @@ let name: String = "Name"
 let isBool: Bool = true
 
 /*
-MARK: - 2) Создайте список товаров с различными характеристиками (количество, название). Используйте typealias.
+2) Создайте список товаров с различными характеристиками (количество, название). Используйте typealias.
 */
 typealias Product = (count: Int, name: String)
 
@@ -37,8 +37,9 @@ for _ in 0...20 {
 }
 
 /*
- MARK: - 3) Напишите различные выражения с приведением типа.
+ 3) Напишите различные выражения с приведением типа.
  */
+
 let numInt: Int = 10
 let numDouble: Double = Double(a)
 print(numDouble)
@@ -60,7 +61,7 @@ let intValueFromDouble: Int = Int(doubleValue)
 print(intValueFromDouble)
 
 /*
-MARK: - 4) Вычисления с операторами (умножение, деление, сложение, вычитание): создайте консольный калькулятор.
+4) Вычисления с операторами (умножение, деление, сложение, вычитание): создайте консольный калькулятор.
  */
 
 func calculateTo(operation: Character, firstNumber: Int, secondNumber: Int) -> Int? {
